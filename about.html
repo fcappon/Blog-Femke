@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Femke's Blog</title>
+
+    <!--Link Stylesheet-->
+    <Link href="./style.css" rel="stylesheet" type="text/css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+    <!--Java Script-->
+    <script src="./java.js" defer></script>
+    <script src="./luxon.min.js"></script>
+
+</head>
+
+    
+<body>
+    <div class="opening">
+        <h1>Femke Cappon</h1>
+        <h2>A Personal Blog</h2>
+
+
+    </div>
+    <!--Navigation bar-->
+
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html" class="active">Home</a>
+        <a href="/about.html">About Me</a>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="nl">Nederlands</option>
+        </select>
+    </div>
+
+        <!--Digital Clocks-->
+    <div class="clocks">
+        <section class ="times">
+            <div data-timezone="Asia/Shanghai">
+                <h3>Suzhou</h3>
+                <output>00:00:00</output>
+            </div>
+            
+            <div data-timezone="Europe/London">
+                <h3>London</h3>
+                <output>00:00:00</output>
+            </div>
+    
+            <div data-timezone="Europe/Berlin">
+                <h3>Amsterdam</h3>
+                <output>00:00:00</output>
+            </div>
+        </section>
+    </div>
+  
+    <!--Blog Posts-->
+
+    <div class="wrapper">
+        
+        <div class="content">
+            <p class="EN">Hi I am Femke!</p>
+            <p class="NL">Hoi ik ben Femke!</p>
+        </div>
+
+    
+    </div>
+
+<!--BACK TO TOP BUTTON-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><p><i class="arrow up"></i></p></button>
+
+</body>
+
+<footer>
+    <div class="container">
+          <p>© 2023 My Personal Blog - Femke Cappon</p>
+    </div>
+</footer>
+
+</html>
