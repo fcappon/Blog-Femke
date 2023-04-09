@@ -39,6 +39,28 @@ body {
     font-weight:lighter; 
   }
 
+  /* SCROLLBAR */
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d0d0d0; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #424242; 
+}
+
 /* OPENING */
 .opening{
     margin-top:60px;
@@ -47,6 +69,7 @@ body {
     line-height: 10px;
     margin-bottom: 15px;
 }
+
 
 .opening h2{
   line-height: 18px;
@@ -194,4 +217,51 @@ body {
   body[data-language="nl"] p.NL {
     display: block;
   }
+
+  /* BACK TO TOP ARROW */
+  .arrow {
+    border: solid black;
+    border-width: 0 2.5px 2.5px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #d0d0d0;; /* Set a background color */
+    color: #424242;; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 2px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 14px; /* Increase font size */
+    width: 40px;
+    height: 40px;
+    opacity: 50%;
+    
+  }
   
+  #myBtn:hover {
+    background-color: #d0d0d0;  /* Add a dark-grey background on hover */
+  }
+
+  
+  /* FOOTER STYLING */
+  footer {
+    background-color: #d0d0d0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top:50px;
+  }
